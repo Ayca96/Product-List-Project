@@ -1,0 +1,42 @@
+@import "../../scss/variables";
+
+.card-container {
+  // border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  margin: 1rem;
+  .cards{
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    img{
+      border-radius: 10px;
+      height: 450px;
+      object-fit: cover;
+      opacity: 5;
+      width: 100%;
+    }
+    .card-over{
+      background-color: rgba(0, 0, 0, .8);
+      border-radius: 10px;
+      bottom: 0;
+      color: #fff;
+      font-size: 1.2rem;
+      left: 0;
+      max-height: 75%;
+      overflow: auto;
+      padding: 1rem;
+      position: absolute;
+      text-align: justify;
+      transform: translateX(100%);
+      transition: transform .7s ease-in-out;
+      -webkit-transform: .7s ease-in-out;
+      width: 100%;
+      z-index: 3;
+
+    }
+  }
+}

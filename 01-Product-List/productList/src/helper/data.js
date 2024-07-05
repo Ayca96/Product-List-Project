@@ -267,6 +267,8 @@ export const products = [
   },
 ];
 
+export default products;
+
 export const categories = [
   "all",
   "electronics",

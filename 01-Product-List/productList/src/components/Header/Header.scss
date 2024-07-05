@@ -1,0 +1,45 @@
+@import "../../scss/variables";
+
+.header{
+  font-size: 35px;
+  display: block;
+  color: $tatliPembe;
+  margin-top: 5rem;
+  padding: .5rem;
+  text-align: center;
+  .btns{
+   border: none;
+   background-color:  $yesil;
+   border-radius: 1rem;
+   cursor: pointer;
+   padding: 1rem;
+   transition: all 1s;
+   
+  }
+  .btn{
+    width: 105px;
+    height: 105px;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    margin: 15px;
+    &:hover{
+      background-color: $yesil;
+      transition: all 1s;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+.btns{
+  flex-direction: row;
+}
+}
+  
+@media screen and (min-width: 0px) {
+  .btns {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+}

@@ -1,10 +1,12 @@
-
-import './App.css';
+import './App.scss';
+import Header from './components/Header/Header';
+import ProductCard from './components/ProductCard/ProductCard';
 
 function App() {
   return (
     <div>
-     <h1>DE09</h1>
+     <Header/>
+     <ProductCard/>
     </div>
   );
 }
