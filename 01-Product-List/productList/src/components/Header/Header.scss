@@ -9,7 +9,7 @@
   text-align: center;
   .btns{
    border: none;
-   background-color:  $yesil;
+   background-color:  $tatliPembe;
    border-radius: 1rem;
    cursor: pointer;
    padding: 1rem;
@@ -24,7 +24,7 @@
     border: none;
     margin: 15px;
     &:hover{
-      background-color: $yesil;
+      background-color: $acikPembe;
       transition: all 1s;
       cursor: pointer;
     }
