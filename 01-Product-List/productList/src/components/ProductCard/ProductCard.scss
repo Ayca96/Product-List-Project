@@ -12,12 +12,19 @@
     overflow: hidden;
     position: relative;
     width: 350px;
+   
     img{
       border-radius: 10px;
       height: 450px;
       object-fit: cover;
-      opacity: 5;
+      opacity: 0.5;
       width: 100%;
+      &:hover{
+        opacity: 5;
+        cursor: pointor;
+        
+       }
+     
     }
     .card-over{
       background-color: rgba(0, 0, 0, .8);
@@ -27,16 +34,36 @@
       font-size: 1.2rem;
       left: 0;
       max-height: 75%;
+      width: 100%;
       overflow: auto;
       padding: 1rem;
       position: absolute;
       text-align: justify;
+     
+      
+      &:hover{
       transform: translateX(100%);
-      transition: transform .7s ease-in-out;
-      -webkit-transform: .7s ease-in-out;
+      transition: transform 1s ease-in-out;
+      -webkit-transform: 1s ease-in-out;
       width: 100%;
       z-index: 3;
-
+      cursor: pointer;
+    
+      }
+      
     }
+    .price{
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    // padding: 1px;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    }
+    
   }
 }
